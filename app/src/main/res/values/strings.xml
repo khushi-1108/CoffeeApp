@@ -1,14 +1,12 @@
 <resources>
     <string name="app_name">CoffeeApp</string>
-    <string name="welcome_text">Welcome to Khushi's Cafe</string>
-    <string-array name="hot_coffee">
-        <item>Espresso</item>
-        <item>Caffee latte</item>
-        <item>Cappuccino</item>
-    </string-array>
-    <string-array name="cold_coffee">
-        <item>Iced Caffe Americano</item>
-        <item>Nitro Cold Brew</item>
-        <item>Iced Coffee</item>
+    <string name="welcome_text">Welcome to Khushi Cafe</string>
+    <string name="find_coffee">Find Coffee</string>
+    <string name="coffee_brands">No coffee selected</string>
+    <string-array name="coffee_category">
+        <item>Hot Coffee</item>
+        <item>Cold Coffee</item>
+        <item>Tea</item>
+        <item>Refreshment</item>
     </string-array>
 </resources>

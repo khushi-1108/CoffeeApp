@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7A7777"
+    android:backgroundTint="#E95C3A3A"
     android:orientation="vertical"
     android:padding="0dp"
-    android:background="#7A7777"
-    android:backgroundTint="#2B2929"
-    tools:context=".MainActivity">
+    tools:context="com.example.coffeeapp.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop='true'
-        android:background="#6750A3"
-        android:layout_gravity="center">
+        android:background="#432222"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -23,48 +21,53 @@
             android:layout_margin="5dp"
             android:text="@string/app_name"
             android:textColor="#FEFAFD"
-            android:textSize="10sp"/>
+            android:textSize="20sp" />
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_text"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="15dp"
-        android:layout_gravity="center"
+        android:text="@string/welcome_text"
         android:textColor="#ECE4E4"
         android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="206dp"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/coffee"/>
+        android:src="@drawable/coffee" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"/>
+    <Spinner
+        android:id="@+id/coffee_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:entries="@array/coffee_category" />
 
-        <Spinner
-            android:id="@+id/hot_coffee"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:entries="@array/hot_coffee" />
+    <Button
+        android:id="@+id/find_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/find_coffee" />
 
-        <Spinner
-            android:id="@+id/cold_coffee"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:entries="@array/cold_coffee" />
+    <TextView
+        android:id="@+id/coffee_brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/coffee_brands"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#DFD8D8"
+        android:textColorHint="#F4EFEF"
+        android:textColorLink="#F4EFEF" />
 
 </LinearLayout>

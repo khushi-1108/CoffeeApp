@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.hfad.coffeeapp"
-    compileSdk = 33
+    namespace = "com.example.coffeeapp"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hfad.coffeeapp"
+        applicationId = "com.example.coffeeapp"
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
